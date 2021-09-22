@@ -1,0 +1,90 @@
+.header {
+	padding-top: 64px;
+	margin-bottom: 198px;
+	&__container {
+		width: 1790px; /*1760+15+15*/
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item {
+		margin: 0 20px;
+	}
+
+	&__link {
+		font-family: $first-font;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: calc(22 / 18 * 100%);
+		transition: color 0.2s ease-in;
+		padding-bottom: 5px;
+		position: relative;
+		transition: all 0.2s ease-in;
+		&::after {
+			content: "";
+			left: 0;
+			bottom: -5px;
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			display: block;
+			background: #fff;
+			opacity: 0;
+			transition: all 0.2s ease-in;
+		}
+		&:hover {
+			color: $gold;
+			&::after {
+				bottom: 0px;
+				opacity: 1;
+				background: $gold;
+			}
+		}
+	}
+	&__account-wrapper {
+		padding-left: 32px;
+		background: url("../img/icons/account.svg") center left no-repeat;
+	}
+	&__account {
+		font-size: 17px;
+		font-weight: 700;
+		line-height: calc(21 / 17 * 100%);
+		transition: color 0.2s ease-in;
+		padding-bottom: 5px;
+		position: relative;
+		vertical-align: center;
+		transition: all 0.2s ease-in;
+		&::after {
+			content: "";
+			left: 0;
+			bottom: -5px;
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			display: block;
+			background: #fff;
+			opacity: 0;
+			transition: all 0.2s ease-in;
+		}
+		&:hover {
+			color: $gold;
+			&::after {
+				bottom: 0px;
+				opacity: 1;
+				background: $gold;
+			}
+		}
+	}
+}

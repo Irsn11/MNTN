@@ -1,0 +1,58 @@
+@import "null";
+@import "var";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
+body {
+	font-family: $first-font;
+	color: #fff;
+}
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+.body-background-image {
+	background-color: #0b1d26;
+	background-image: url("../img/bg.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.container {
+	width: 1492px; /*1462+15+15*/
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+}
+
+.category {
+	font-family: $first-font;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: calc(22 / 18 * 100%);
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	color: $gold;
+	padding-left: 104px;
+	background: url("../img/hero/rectangle.svg") center left no-repeat;
+}
+
+.logo {
+	font-family: $second-font;
+	font-size: 32px;
+	line-height: calc(38 / 32 * 100%);
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+}
+@import "header";
+@import "hero";
+@import "prevew";
+@import "footer";
+//@import "";
+//@import "";
+//@import "";

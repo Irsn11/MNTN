@@ -1,0 +1,59 @@
+.prevew {
+	margin-bottom: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__content {
+		position: relative;
+		width: 632px;
+		margin: 0 auto 0 150px;
+		& > *:not(:last-child) {
+			margin-bottom: 27px;
+		}
+	}
+	&:nth-child(even) {
+		flex-direction: row-reverse;
+		.prevew__content {
+			margin: 0 0 0 auto;
+		}
+	}
+	&__numbering {
+		position: absolute;
+		top: -88px;
+		left: -142px;
+		font-weight: bold;
+		font-size: 240px;
+		line-height: 100%;
+		opacity: 0.1;
+	}
+
+	&__image {
+		img {
+			max-width: 100%;
+			max-width: 566px;
+			height: auto;
+		}
+	}
+
+	&__title {
+		font-family: $second-font;
+		font-weight: 600;
+		font-size: 64px;
+		line-height: calc(77 / 64 * 100%);
+	}
+
+	&__text {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 178%;
+	}
+
+	&__link {
+		font-family: Gilroy;
+		font-size: 18px;
+		color: $gold;
+		line-height: 24px;
+		padding-right: 32px;
+		background: url("../img/icons/arrow_rigth.svg") center right no-repeat;
+	}
+}
